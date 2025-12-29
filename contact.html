@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Eddie Adams</title>
+  <meta name="description" content="Contact Eddie Ada — content strategist, UX writer, and creative director." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html" class="site-title">Eddie Adams</a>
+      <ul class="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <header class="contact-header">
+      <h1>Contact</h1>
+      <p>
+        I'm open to strategic content projects, UX writing collaborations, and creative direction opportunities. Reach out using the form below or via LinkedIn.
+      </p>
+    </header>
+
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <form action="mailto:eddie.adams@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="contact-section">
+      <h2>Other Ways to Reach Me</h2>
+      <ul>
+       <!-- <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>-->
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/eddiemadams" target="_blank" rel="noopener">linkedin.com/in/eddiemadams</a></li>
+        <!-- <li>Optional: Phone or other professional links</li> -->
+      </ul>
+    </section>
+
+<article class="case-study">
+<nav class="case-study-nav">
+        <a href="work.html">← Back to Work</a>
+      </nav>
+</article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small>
+      © <span id="year"></span> Eddie Adams
+    </small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
